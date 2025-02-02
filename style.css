@@ -30,7 +30,8 @@ header,footer{
 }
 
 ul{
-    padding:0px;
+    padding: 0px;
+    text-align: center;
 }
 
 #menu_header{
@@ -73,6 +74,9 @@ ul{
 }
 
 @media screen and (width >= 768px){
+    ul{
+        text-align: left;
+    }
     #element_grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
