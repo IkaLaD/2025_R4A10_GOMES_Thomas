@@ -32,24 +32,24 @@ module.exports = {
 
   // 5) Ajouter la propriété email à myObject et renvoyer l'objet modifié
   Q5() {
-    let obj = getObject();
-    obj.email = email;
-    return obj;
+    let objet = getObject();
+    objet.email = email;
+    return objet;
   },
 
   // 6) Ajouter une propriété dynamique étant le résultat de la concaténation des chaines hello et world et dont la valeur est true
   Q6() {
-    let obj = getObject();
-    let key = "hello" + "world";
-    obj[key] = true;
-    return obj;
+    let objet = getObject();
+    let key = "HelloWorld";
+    objet[key] = true;
+    return objet;
   },
 
   // 7) Supprimer la propriété isBestObject et renvoyer l'objet
   Q7() {
-    let obj = getObject();
-    delete obj.isBestObject;
-    return obj;
+    let objet = getObject();
+    delete objet.isBestObject;
+    return objet;
   },
 
   // 8) Vérifier que la propriété description existe dans l'objet, renvoyer un booléen

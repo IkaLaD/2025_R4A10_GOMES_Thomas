@@ -33,38 +33,38 @@ module.exports = {
 
   //5) Ajouter la valeur 0 en premier index du tableau, renvoyez le tableau modifié
   Q5() {
-    let arr = getArray().slice();
-    arr.unshift(0);
-    return arr;
+    let array = getArray().slice();
+    array.unshift(0);
+    return array;
   },
 
   //6) Faire la somme des éléments du tableau avec une boucle for. Renvoyez la somme
   Q6() {
-    let arr = getArray();
+    let array = getArray();
     let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
     }
     return sum;
   },
 
   //7) Faire la somme des éléments du tableau avec une méthode spécifique de tableau (reduce), renvoyez la somme
   Q7() {
-    return getArray().reduce((prev, next) => prev + next, 0);
+    return getArray().reduce((previous, next) => previous + next, 0);
   },
 
   //8) Remplacer la troisième valeur du tableau par "ici", renvoyez le tableau
   Q8() {
-    let arr = getArray().slice();
-    arr[2] = "ici";
-    return arr;
+    let array = getArray().slice();
+    array[2] = "ici";
+    return array;
   },
 
   //9) Retirer le dernier index, renvoyez le tableau
   Q9() {
-    let arr = getArray().slice();
-    arr.pop();
-    return arr;
+    let array = getArray().slice();
+    array.pop();
+    return array;
   },
 
   //10) Renvoyez le type de la variable ARRAY
