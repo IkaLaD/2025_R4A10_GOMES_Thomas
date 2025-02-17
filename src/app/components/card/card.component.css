@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    min-height: 250px;
+    background: white;
+    border: 0.5px solid rgb(230,230,230);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+  
+.card-icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+  
+.card-title {
+    font-size: 17px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+  
+.card-description {
+    font-size: 16px;
+    flex-grow: 1;
+    color: gray;
+}

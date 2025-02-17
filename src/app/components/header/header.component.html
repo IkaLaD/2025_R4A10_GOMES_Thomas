@@ -1,0 +1,24 @@
+<header>
+    <nav>
+        <div id="logo">
+            <p id="t-logo">{{title[0]}}</p>
+            <p id="trafalgar">{{title}}</p>
+        </div>
+        <ul id="header-nav">
+            @for (nav of nav_pages ; track $index){
+                <li class="li-header-nav">{{nav}}</li>
+            }
+        </ul>
+        <button id="header-hide">Open header</button>
+    </nav>  
+    <div id="header-text-illustration">
+        <div id="header-text">
+            <h1 id="title-header">Virtual healthcare for you</h1>
+            <p id="description">Trafalgar provides progressive, and affordable 
+                healthcare, accessible on mobile and online 
+                for everyone</p>
+            <app-button button_text="Consult today"/>
+        </div>
+        <img id="header-illustration" src="assets/illustration.png">
+    </div>
+</header>
