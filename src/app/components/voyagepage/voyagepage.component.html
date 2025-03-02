@@ -7,6 +7,17 @@
     <div class="voyage-card-description">
       <p>{{description}}</p>
     </div>
-    <button (click)="onSuprimmer()" class="suprimmer-button">Suprimmer</button>
+    <button (click)="openModal()" class="bluebutton">Supprimer</button>
+  </div>
+</div>
+
+<div class="modal" [class.show]="isModalOpen" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <h2>Confirmer la suppression</h2>
+    <p>Êtes-vous sûr de vouloir supprimer ce voyage ?</p>
+    <div class="modal-actions">
+      <button (click)="confirmSuprimmer()" class="bluebutton">Oui, supprimer</button>
+      <button (click)="closeModal()" class="redbutton">Annuler</button>
+    </div>
   </div>
 </div>
