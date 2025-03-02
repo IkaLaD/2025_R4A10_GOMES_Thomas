@@ -1,117 +1,20 @@
-header{
-    margin: 0 10% 0 10%
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-    margin: 50px 0 50px 0
-}
-
-#logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px
-}
-
-#t-logo{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
     text-align: center;
-    line-height: 40px;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav a {
     color: white;
-    font-size: 30px;
-    background: #458FF6;
-    margin: 0;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-#trafalgar{
-    margin: 0;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    color: #233348;
+.nav a:hover {
+    text-decoration: underline;
 }
-
-#header-nav{
-    display: none;
-    gap: 20px;
-    list-style: none;
-}
-
-.li-header-nav{
-    color: grey;
-}
-
-#header-text-illustration{
-    display: flex;
-    gap: 150px;
-    align-items: center;
-}
-
-#header-text{
-    width: 80%;
-    font-family: 'Mulish';
-    font-weight: 700;
-    letter-spacing: 0%;
-}
-
-#title-header{
-    font-size: 48px;
-}
-
-#header-illustration{
-    display: none;
-    width: 50%;
-    height: 50%;
-}
-
-#header-hide{
-    background: #458FF7;
-    font-size: 15px;
-    color: white;
-    padding: 10px 20px;
-    border: 2px solid #458FF7;
-    border-radius: 26px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-@media (width > 1200px){
-    #header-illustration{
-        display: block;
-    }
-    #header-text{
-        width: 40%;
-    }
-}
-
-@media (width > 600px) {
-    #header-hide{
-        display: none;
-    }
-    #header-nav{
-        display: flex;
-    }
-}
-
-#description{
-    color: grey;
-    font-weight: 200;
-    font-size: 22px;
-}
-
-#consult-today{
-    border-radius: 25px;
-    padding: 12px 22px;
-    color: white;
-    font-weight: 700;
-    background-color: #458FF6;
-    border-color: #458FF6;
-}
-

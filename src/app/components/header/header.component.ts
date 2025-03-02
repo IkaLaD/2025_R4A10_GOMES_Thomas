@@ -1,15 +1,13 @@
-import { Component, Input } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.sass'
+  styleUrl: './header.component.css'
 })
-
 export class HeaderComponent {
-  @Input({required : true}) title!:string;
-  @Input({required : true}) nav_pages!:string[];
+
 }
