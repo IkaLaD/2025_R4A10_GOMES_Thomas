@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.voyage-card {
+  width: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voyage-card-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.voyage-card-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.prix {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.voyage-card-description {
+  flex-grow: 1;
+}
+
+.voyage-card-description p {
+  font-size: 16px;
+  color: #555;
+}
+
+.suprimmer-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
