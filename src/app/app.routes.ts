@@ -1,28 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomepageComponent } from './components/homepage/homepage.component';
-import { ListeVoyagesPageComponent } from './components/listevoyagespage/liste-voyages-page.component';
-import { VoyagepageComponent } from './components/voyagepage/voyagepage.component';
-import { GenererVoyageComponent } from './components/generationvoyage/generationvoyage.component';
+import { BookListPageComponent } from './pages/book-list-page/book-list-page.component';
+import { SingleBookPageComponent } from './pages/single-book-page/single-book-page.component';
+import { CreateBookPageComponent } from './pages/create-book-page/create-book-page.component';
+
 export const routes: Routes = [
-    {
-        component: HomepageComponent,
-        path: "home"
-    },
-    {
-        component: ListeVoyagesPageComponent,
-        path: "listevoyages"
-    },
-    {
-        component: VoyagepageComponent,
-        path: "pagevoyage/:id"
-    },
-    {
-        component: GenererVoyageComponent,
-        path: "generationvoyage"
-    },
-    {
-        path: "",
-        redirectTo: "home",
-        pathMatch: "full"
-    },
+  { path: '', component: BookListPageComponent },
+  { path: 'book/create', component: CreateBookPageComponent },
+  { path: 'book/:id', component: SingleBookPageComponent },
 ];
